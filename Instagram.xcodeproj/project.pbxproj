@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560F231F2926711900DAEBD2 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560F231E2926711900DAEBD2 /* Const.swift */; };
+		560F2321292686E400DAEBD2 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560F2320292686E400DAEBD2 /* PostData.swift */; };
+		560F232429268B9200DAEBD2 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560F232229268B9200DAEBD2 /* PostTableViewCell.swift */; };
+		560F232529268B9200DAEBD2 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 560F232329268B9200DAEBD2 /* PostTableViewCell.xib */; };
 		565E7B34291CD6270042EA16 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E7B33291CD6270042EA16 /* TabBarController.swift */; };
 		565E7B36291CE7060042EA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 565E7B35291CE7060042EA16 /* GoogleService-Info.plist */; };
 		56ABD82E291C9B460046B2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ABD82D291C9B460046B2B2 /* AppDelegate.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		560F231E2926711900DAEBD2 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		560F2320292686E400DAEBD2 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		560F232229268B9200DAEBD2 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		560F232329268B9200DAEBD2 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		565E7B33291CD6270042EA16 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		565E7B35291CE7060042EA16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		56ABD82A291C9B460046B2B2 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +101,10 @@
 				56ABD849291CA0C00046B2B2 /* SettingViewController.swift */,
 				565E7B33291CD6270042EA16 /* TabBarController.swift */,
 				56ABD833291C9B460046B2B2 /* Main.storyboard */,
+				560F2320292686E400DAEBD2 /* PostData.swift */,
+				560F232229268B9200DAEBD2 /* PostTableViewCell.swift */,
+				560F232329268B9200DAEBD2 /* PostTableViewCell.xib */,
+				560F231E2926711900DAEBD2 /* Const.swift */,
 				56ABD836291C9B470046B2B2 /* Assets.xcassets */,
 				56ABD838291C9B470046B2B2 /* LaunchScreen.storyboard */,
 				56ABD83B291C9B470046B2B2 /* Info.plist */,
@@ -170,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56ABD83A291C9B470046B2B2 /* LaunchScreen.storyboard in Resources */,
+				560F232529268B9200DAEBD2 /* PostTableViewCell.xib in Resources */,
 				565E7B36291CE7060042EA16 /* GoogleService-Info.plist in Resources */,
 				56ABD837291C9B470046B2B2 /* Assets.xcassets in Resources */,
 				56ABD835291C9B460046B2B2 /* Main.storyboard in Resources */,
@@ -225,14 +238,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560F232429268B9200DAEBD2 /* PostTableViewCell.swift in Sources */,
 				56ABD846291CA0900046B2B2 /* ImageSelectViewController.swift in Sources */,
 				565E7B34291CD6270042EA16 /* TabBarController.swift in Sources */,
 				56ABD844291CA0780046B2B2 /* HomeViewController.swift in Sources */,
 				56ABD848291CA0AB0046B2B2 /* PostViewController.swift in Sources */,
 				56ABD84A291CA0C00046B2B2 /* SettingViewController.swift in Sources */,
+				560F2321292686E400DAEBD2 /* PostData.swift in Sources */,
 				56ABD842291CA03C0046B2B2 /* LoginViewController.swift in Sources */,
 				56ABD82E291C9B460046B2B2 /* AppDelegate.swift in Sources */,
 				56ABD830291C9B460046B2B2 /* SceneDelegate.swift in Sources */,
+				560F231F2926711900DAEBD2 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
