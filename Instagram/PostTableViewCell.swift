@@ -11,10 +11,12 @@ import FirebaseStorageUI
 class PostTableViewCell: UITableViewCell {
     
     @IBOutlet weak var postImageView: UIImageView!
+    @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var commentLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,6 +38,25 @@ class PostTableViewCell: UITableViewCell {
         
         // キャプションの表示
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
+        
+        // 課題で追加: コメントの表示
+//        self.commentLabel.text = "\(postData.name!) : \(postData.comments!)"
+        let commentsNumber = postData.comments.count
+//        print (commentsNumber)
+//        print (postData.comments[0])
+//        print (postData.comments[1])
+        var newlinedComments: String = ""
+        
+        for i in 0 ..< commentsNumber {
+            if i == 0 {
+                newlinedComments = postData.comments[i]
+                print ("DEBUG_PRINT: \(newlinedComments)")
+            } else {
+                newlinedComments = newlinedComments + "\n" + postData.comments[i]
+                print ("DEBUG_PRINT: \(newlinedComments)")
+            }
+        }
+        self.commentLabel.text = "\(newlinedComments)"
         
         // 日時の表示
         self.dateLabel.text = ""
@@ -60,8 +81,4 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: .normal)
         }        
     }
-    
-    
-    
-    
 }
