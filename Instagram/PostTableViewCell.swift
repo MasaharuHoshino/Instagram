@@ -40,19 +40,16 @@ class PostTableViewCell: UITableViewCell {
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
         
         // 課題で追加: コメントの表示
-//        self.commentLabel.text = "\(postData.name!) : \(postData.comments!)"
         let commentsNumber = postData.comments.count
-//        print (commentsNumber)
-//        print (postData.comments[0])
-//        print (postData.comments[1])
         var newlinedComments: String = ""
-        
         for i in 0 ..< commentsNumber {
             if i == 0 {
                 newlinedComments = postData.comments[i]
+                // DEBUG
                 print ("DEBUG_PRINT: \(newlinedComments)")
             } else {
                 newlinedComments = newlinedComments + "\n" + postData.comments[i]
+                // DEBUG
                 print ("DEBUG_PRINT: \(newlinedComments)")
             }
         }

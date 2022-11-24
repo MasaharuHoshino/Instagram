@@ -107,8 +107,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
+    // 課題で追加: Commentボタンがタップされた時のアクション
     @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent) {
-        print("DEBUG_PRINT: commentボタンがタップされました")
+        print("DEBUG_PRINT: Commentボタンがタップされました")
         
         // タップされたセルのインデックスを求める
         let touch = event.allTouches?.first
@@ -118,11 +119,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // 配列からタップされたインデックスのデータを取り出す
         let postData = postArray[indexPath!.row]
 
-        // コメント入力画面へ遷移する
+        // コメント入力画面へ遷移する（該当ドキュメントID、既存コメント群を遷移先へ渡す）
         let commentViewController = self.storyboard?.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
         commentViewController.id = postData.id
         commentViewController.comments = postData.comments
         self.present(commentViewController, animated: true, completion: nil)
     }
-    
 }
